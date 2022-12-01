@@ -3,7 +3,7 @@ import About from "./routes/About";
 import Home, { fetch } from "./routes/Home";
 import Root from "./routes/root";
 import "./App.css";
-import NewPost, { submitPost } from "./routes/Newpost";
+import NewPost from "./routes/Newpost";
 import  Post, {postLoader} from "./routes/post";
 
 
@@ -24,7 +24,7 @@ export default function App(){
     {
     path:'/new',
     element:<NewPost />,
-    action:submitPost,
+    
   
   },
   {
